@@ -5,8 +5,7 @@ import java.net.URL;
 public class AsyncShow implements AsyncCallback {
     @Override
     public void handleResult(Object o, URL url, String s) {
-        properVector.setMap(o.toString());
-        System.out.println("From: "+url+"\n"+o);
+        System.out.println("Async function response\nFrom: "+url+"\n"+o);
     }
 
     @Override
