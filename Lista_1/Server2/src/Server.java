@@ -1,5 +1,8 @@
 import org.apache.xmlrpc.WebServer;
 
+import java.util.Calendar;
+import java.util.Date;
+
 public class Server {
 
     static int PORT=1051;
@@ -18,6 +21,13 @@ public class Server {
     }
 
     public String show(){
-        return "Nothing for now";
+        return "#getNextDate\nDate, int => Date\nFunction returns date x days into future from given date\n";
+    }
+
+    public Date getNextDate(Date date, int days){
+        var calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        calendar.add(Calendar.DAY_OF_MONTH, days);
+        return calendar.getTime();
     }
 }
