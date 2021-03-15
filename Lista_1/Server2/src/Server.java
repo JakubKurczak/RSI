@@ -23,7 +23,7 @@ public class Server {
 
     public String show(){
         return "#getNextDate\nDate, int => Date\nFunction returns date x days into future from given date\n"
-                + "#summary\nint, int => int\nAdds arguments and returns result\n"
+                + "#power\nint, int => int\nCalculate a number raise to the power of some other number\n"
                 +"#randomWord\n () => String\nReturns random word\n"
                 +"#sleepFunc\n () => int\n returns HTTP value 200 after 10 seconds\n";
     }
@@ -35,8 +35,8 @@ public class Server {
         return calendar.getTime();
     }
 
-    public int summary(int x, int y){
-        return x+y;
+    public int power(int x, int y){
+        return (int)Math.pow(x,y);
     }
 
     public String randomWord(){

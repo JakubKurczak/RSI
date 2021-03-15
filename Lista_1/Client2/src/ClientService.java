@@ -1,18 +1,21 @@
 import org.apache.xmlrpc.XmlRpcClient;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 import java.util.List;
 
 public class ClientService {
-    static int PORT=1051;
+    static String PORT="1051";
     static String HOST="localhost";
     public static void main(String[] args){
+        hello();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Provide host name:");
+        System.out.println("\nProvide host name:");
         ClientService.HOST = scanner.nextLine();
         System.out.println("\nProvide port number: ");
-        ClientService.PORT = Integer.valueOf(scanner.nextLine());
+        ClientService.PORT = scanner.nextLine();
 
         try{
             XmlRpcClient client = new XmlRpcClient("http://"+ClientService.HOST+":"+ClientService.PORT);
@@ -49,5 +52,17 @@ public class ClientService {
         }catch(Exception e){
             System.err.println(e);
         }
+    }
+
+    static void hello(){
+        //imie nazwisko nr albumu
+        //data i czas do sekund
+        //username
+        System.out.println("Jakub Kurczak 237470");
+        System.out.println("Maciej Rys 246648");
+        System.out.println(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
+
+        System.out.println(System.getProperty("user.name"));
+
     }
 }
