@@ -12,7 +12,7 @@ public class MyServer{
             System.setSecurityManager(new SecurityManager());
 
         try{
-            Registry registry = LocateRegistry.createRegistry(1099);
+            Registry registry = LocateRegistry.createRegistry(1098);
         }catch (Exception e){
             e.printStackTrace();
         }
