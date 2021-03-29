@@ -19,7 +19,8 @@ namespace GrpcGreeter
         {
             return Task.FromResult(new HelloReply
             {
-                Message = "Hello " + request.Name
+
+                Message = "Hello " + request.Name + "\nFrom machine: " + Environment.MachineName + " user: " + Environment.UserName
             });
         }
     }

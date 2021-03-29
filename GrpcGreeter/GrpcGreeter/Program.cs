@@ -12,6 +12,11 @@ namespace GrpcGreeter
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine(DateTime.Now);
+            Console.WriteLine(Environment.MachineName);
+            Console.WriteLine(Environment.UserName);
+            Console.WriteLine("Maciej Ry?");
+            Console.WriteLine("Jakub Kurczak");
             CreateHostBuilder(args).Build().Run();
         }
 

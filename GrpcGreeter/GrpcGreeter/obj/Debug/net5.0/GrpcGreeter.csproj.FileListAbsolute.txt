@@ -29,3 +29,34 @@ D:\projektownaie baz danych repo\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\Gr
 D:\projektownaie baz danych repo\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\ref\GrpcGreeter.dll
 D:\projektownaie baz danych repo\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.pdb
 D:\projektownaie baz danych repo\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.genruntimeconfig.cache
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\bin\Debug\net5.0\appsettings.json
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\bin\Debug\net5.0\GrpcGreeter.exe
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\bin\Debug\net5.0\GrpcGreeter.deps.json
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\bin\Debug\net5.0\GrpcGreeter.runtimeconfig.json
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\bin\Debug\net5.0\GrpcGreeter.runtimeconfig.dev.json
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\bin\Debug\net5.0\GrpcGreeter.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\bin\Debug\net5.0\ref\GrpcGreeter.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\bin\Debug\net5.0\GrpcGreeter.pdb
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\bin\Debug\net5.0\Google.Protobuf.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\bin\Debug\net5.0\Grpc.AspNetCore.Server.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\bin\Debug\net5.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\bin\Debug\net5.0\Grpc.Core.Api.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\bin\Debug\net5.0\Grpc.Net.Client.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\bin\Debug\net5.0\Grpc.Net.ClientFactory.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\bin\Debug\net5.0\Grpc.Net.Common.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.csprojAssemblyReference.cache
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.AssemblyInfoInputs.cache
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.AssemblyInfo.cs
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.csproj.CoreCompileInputs.cache
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\staticwebassets\GrpcGreeter.StaticWebAssets.Manifest.cache
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\staticwebassets\GrpcGreeter.StaticWebAssets.xml
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\scopedcss\bundle\GrpcGreeter.styles.css
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.RazorTargetAssemblyInfo.cache
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.csproj.CopyComplete
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\ref\GrpcGreeter.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.pdb
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeter\GrpcGreeter\obj\Debug\net5.0\GrpcGreeter.genruntimeconfig.cache

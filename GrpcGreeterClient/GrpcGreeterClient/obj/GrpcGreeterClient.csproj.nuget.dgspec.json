@@ -1,27 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projektownaie baz danych repo\\RSI\\GrpcGreeterClient\\GrpcGreeterClient\\GrpcGreeterClient.csproj": {}
+    "C:\\Users\\Kubak\\Source\\Repos\\RSI\\GrpcGreeterClient\\GrpcGreeterClient\\GrpcGreeterClient.csproj": {}
   },
   "projects": {
-    "D:\\projektownaie baz danych repo\\RSI\\GrpcGreeterClient\\GrpcGreeterClient\\GrpcGreeterClient.csproj": {
+    "C:\\Users\\Kubak\\Source\\Repos\\RSI\\GrpcGreeterClient\\GrpcGreeterClient\\GrpcGreeterClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projektownaie baz danych repo\\RSI\\GrpcGreeterClient\\GrpcGreeterClient\\GrpcGreeterClient.csproj",
+        "projectUniqueName": "C:\\Users\\Kubak\\Source\\Repos\\RSI\\GrpcGreeterClient\\GrpcGreeterClient\\GrpcGreeterClient.csproj",
         "projectName": "GrpcGreeterClient",
-        "projectPath": "D:\\projektownaie baz danych repo\\RSI\\GrpcGreeterClient\\GrpcGreeterClient\\GrpcGreeterClient.csproj",
-        "packagesPath": "C:\\Users\\macie\\.nuget\\packages\\",
-        "outputPath": "D:\\projektownaie baz danych repo\\RSI\\GrpcGreeterClient\\GrpcGreeterClient\\obj\\",
+        "projectPath": "C:\\Users\\Kubak\\Source\\Repos\\RSI\\GrpcGreeterClient\\GrpcGreeterClient\\GrpcGreeterClient.csproj",
+        "packagesPath": "C:\\Users\\Kubak\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kubak\\Source\\Repos\\RSI\\GrpcGreeterClient\\GrpcGreeterClient\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\macie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Kubak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

@@ -20,3 +20,25 @@ D:\projektownaie baz danych repo\RSI\GrpcGreeterClient\GrpcGreeterClient\bin\Deb
 D:\projektownaie baz danych repo\RSI\GrpcGreeterClient\GrpcGreeterClient\bin\Debug\net5.0\Grpc.Net.Common.dll
 D:\projektownaie baz danych repo\RSI\GrpcGreeterClient\GrpcGreeterClient\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\projektownaie baz danych repo\RSI\GrpcGreeterClient\GrpcGreeterClient\obj\Debug\net5.0\GrpcGreeterClient.csproj.CopyComplete
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\bin\Debug\net5.0\GrpcGreeterClient.exe
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\bin\Debug\net5.0\GrpcGreeterClient.deps.json
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\bin\Debug\net5.0\GrpcGreeterClient.runtimeconfig.json
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\bin\Debug\net5.0\GrpcGreeterClient.runtimeconfig.dev.json
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\bin\Debug\net5.0\GrpcGreeterClient.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\bin\Debug\net5.0\ref\GrpcGreeterClient.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\bin\Debug\net5.0\GrpcGreeterClient.pdb
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\bin\Debug\net5.0\Google.Protobuf.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\bin\Debug\net5.0\Grpc.Core.Api.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\bin\Debug\net5.0\Grpc.Net.Client.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\bin\Debug\net5.0\Grpc.Net.Common.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\obj\Debug\net5.0\GrpcGreeterClient.csprojAssemblyReference.cache
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\obj\Debug\net5.0\GrpcGreeterClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\obj\Debug\net5.0\GrpcGreeterClient.AssemblyInfoInputs.cache
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\obj\Debug\net5.0\GrpcGreeterClient.AssemblyInfo.cs
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\obj\Debug\net5.0\GrpcGreeterClient.csproj.CoreCompileInputs.cache
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\obj\Debug\net5.0\GrpcGreeterClient.csproj.CopyComplete
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\obj\Debug\net5.0\GrpcGreeterClient.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\obj\Debug\net5.0\ref\GrpcGreeterClient.dll
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\obj\Debug\net5.0\GrpcGreeterClient.pdb
+C:\Users\Kubak\Source\Repos\RSI\GrpcGreeterClient\GrpcGreeterClient\obj\Debug\net5.0\GrpcGreeterClient.genruntimeconfig.cache
