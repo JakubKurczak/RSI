@@ -15,13 +15,22 @@ namespace GrpcGreeter
             _logger = logger;
         }
 
-        public override Task<HelloReply> SayHello(HelloRequest request, ServerCallContext context)
+        public override Task<PolynomialResult> CalculatePolynomial(PolynomialRequest request, ServerCallContext context)
         {
-            return Task.FromResult(new HelloReply
+            double Result = 0;
+            for (int i = 0; i < request.BaseArray.Count; i++)
             {
+                Result += request.BaseArray[i] * Math.Pow(request.X, i);
+            }
 
-                Message = "Hello " + request.Name + "\nFrom machine: " + Environment.MachineName + " user: " + Environment.UserName
+            return Task.FromResult(new PolynomialResult
+            {
+                Result = Result
+
+
             });
-        }
     }
+
 }
+}
+

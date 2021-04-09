@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Google.Protobuf.Collections;
 using Grpc.Net.Client;
 
 namespace GrpcGreeterClient
@@ -18,16 +19,20 @@ namespace GrpcGreeterClient
             // Return true to allow certificates that are untrusted/invalid
             httpHandler.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
 
-
-            using var channel = GrpcChannel.ForAddress("https://25.28.162.104:5001", new GrpcChannelOptions { HttpHandler = httpHandler });
-            //the port number(5001) must match the port of the grpc server.
-            //using var channel = GrpcChannel.ForAddress("https://25.28.162.104:5001");
+            var polynomialRequest = new PolynomialRequest();
+            polynomialRequest.X = 3;
+            polynomialRequest.BaseArray.Add(3);
+            polynomialRequest.BaseArray.Add(2);
+            using var channel = GrpcChannel.ForAddress("http://localhost:5001", new GrpcChannelOptions { HttpHandler = httpHandler });
             var client = new Greeter.GreeterClient(channel);
-            var reply = await client.SayHelloAsync(
-                              new HelloRequest { Name = "greeterclient" });
-            Console.WriteLine("greeting: " + reply.Message);
+            var reply = client.CalculatePolynomial(polynomialRequest);
+                            
+            Console.WriteLine("Wynik to: " + reply.Result);
             Console.WriteLine("press any key to exit...");
             Console.ReadKey();
         }
     }
+
+
 }
+//
