@@ -4,4 +4,3 @@ C:\Users\Kubak\source\repos\WcfServiceLibrary1\WcfServiceLibrary1\bin\Debug\WcfS
 C:\Users\Kubak\source\repos\WcfServiceLibrary1\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.csproj.CoreCompileInputs.cache
 C:\Users\Kubak\source\repos\WcfServiceLibrary1\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.dll
 C:\Users\Kubak\source\repos\WcfServiceLibrary1\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.pdb
-C:\Users\Kubak\source\repos\WcfServiceLibrary1\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.csprojAssemblyReference.cache

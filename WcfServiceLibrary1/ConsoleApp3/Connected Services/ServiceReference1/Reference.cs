@@ -15,28 +15,28 @@ namespace ConsoleApp3.ServiceReference1 {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IKalkulator")]
     public interface IKalkulator {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IKalkulator/Dodaj", ReplyAction="http://tempuri.org/IKalkulator/DodajResponse")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/Dodaj", ReplyAction="http://tempuri.org/IKalkulator/DodajResponse")]
         double Dodaj(double val_1, double val_2);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IKalkulator/Dodaj", ReplyAction="http://tempuri.org/IKalkulator/DodajResponse")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/Dodaj", ReplyAction="http://tempuri.org/IKalkulator/DodajResponse")]
         System.Threading.Tasks.Task<double> DodajAsync(double val_1, double val_2);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IKalkulator/Odejmij", ReplyAction="http://tempuri.org/IKalkulator/OdejmijResponse")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/Odejmij", ReplyAction="http://tempuri.org/IKalkulator/OdejmijResponse")]
         double Odejmij(double val_1, double val_2);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IKalkulator/Odejmij", ReplyAction="http://tempuri.org/IKalkulator/OdejmijResponse")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/Odejmij", ReplyAction="http://tempuri.org/IKalkulator/OdejmijResponse")]
         System.Threading.Tasks.Task<double> OdejmijAsync(double val_1, double val_2);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IKalkulator/Pomnoz", ReplyAction="http://tempuri.org/IKalkulator/PomnozResponse")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/Pomnoz", ReplyAction="http://tempuri.org/IKalkulator/PomnozResponse")]
         double Pomnoz(double val_1, double val_2);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IKalkulator/Pomnoz", ReplyAction="http://tempuri.org/IKalkulator/PomnozResponse")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/Pomnoz", ReplyAction="http://tempuri.org/IKalkulator/PomnozResponse")]
         System.Threading.Tasks.Task<double> PomnozAsync(double val_1, double val_2);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IKalkulator/Sumuj", ReplyAction="http://tempuri.org/IKalkulator/SumujResponse")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/Sumuj", ReplyAction="http://tempuri.org/IKalkulator/SumujResponse")]
         double Sumuj(double val_1);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IKalkulator/Sumuj", ReplyAction="http://tempuri.org/IKalkulator/SumujResponse")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/Sumuj", ReplyAction="http://tempuri.org/IKalkulator/SumujResponse")]
         System.Threading.Tasks.Task<double> SumujAsync(double val_1);
     }
     

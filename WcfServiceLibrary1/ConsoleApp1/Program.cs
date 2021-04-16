@@ -29,7 +29,7 @@ namespace ConsoleApp1
             BasicHttpBinding basicHttpBinding2 = new BasicHttpBinding();
             ServiceEndpoint endpoint2 = mojHost.AddServiceEndpoint(typeof(IKalkulator), basicHttpBinding2, "endpoint_2");
 
-            ServiceEndpoint endpoint3 = mojHost.Description.Endpoints.Find(new Uri("http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Service1/mex/endpoint3"));
+            ServiceEndpoint endpoint3 = mojHost.Description.Endpoints.Find(new Uri("http://localhost:10001/Service1/endpoint3"));
 
             try
             {

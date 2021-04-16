@@ -11,12 +11,37 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            KalkulatorClient kalkulatorClient = new KalkulatorClient();
 
-            double result = kalkulatorClient.Dodaj(2.3, 3.3);
-            Console.WriteLine("Wynik: " + result);
+            KalkulatorClient kalkulatorClient1 = new KalkulatorClient("mojEndpoint3");
+            KalkulatorClient kalkulatorClient2 = new KalkulatorClient("WSHttpBinding_IKalkulator");
+            KalkulatorClient kalkulatorClient3 = new KalkulatorClient("BasicHttpBinding_IKalkulator");
+
+            Console.WriteLine("Klient 1:");
+            
+            Console.WriteLine("Wynik Dodaj {0} i {1}: {2}", 2.3,3.3, kalkulatorClient1.Dodaj(2.3, 3.3));
+            Console.WriteLine("Wynik Odejmij {0} i {1}: {2}", 2.3, 3.3, kalkulatorClient1.Odejmij(2.3, 3.3));
+            Console.WriteLine("Wynik Pomnoz {0} i {1}: {2}", 2.3, 3.3, kalkulatorClient1.Pomnoz(2.3, 3.3));
+            Console.WriteLine("Wynik Sumowania {0} : {1}", 2.3, kalkulatorClient1.Sumuj(2.3));
+
+            Console.WriteLine("Klient 2:");
+
+            Console.WriteLine("Wynik Dodaj {0} i {1}: {2}", 2.3, 3.3, kalkulatorClient2.Dodaj(2.3, 3.3));
+            Console.WriteLine("Wynik Odejmij {0} i {1}: {2}", 2.3, 3.3, kalkulatorClient2.Odejmij(2.3, 3.3));
+            Console.WriteLine("Wynik Pomnoz {0} i {1}: {2}", 2.3, 3.3, kalkulatorClient2.Pomnoz(2.3, 3.3));
+            Console.WriteLine("Wynik Sumowania {0} : {1}", 2.3, kalkulatorClient2.Sumuj(2.3));
+
+            Console.WriteLine("Klient 3:");
+
+            Console.WriteLine("Wynik Dodaj {0} i {1}: {2}", 2.3, 3.3, kalkulatorClient3.Dodaj(2.3, 3.3));
+            Console.WriteLine("Wynik Odejmij {0} i {1}: {2}", 2.3, 3.3, kalkulatorClient3.Odejmij(2.3, 3.3));
+            Console.WriteLine("Wynik Pomnoz {0} i {1}: {2}", 2.3, 3.3, kalkulatorClient3.Pomnoz(2.3, 3.3));
+            Console.WriteLine("Wynik Sumowania {0} : {1}", 2.3, kalkulatorClient3.Sumuj(2.3));
             Console.ReadLine();
-            kalkulatorClient.Close();
+
+
+            kalkulatorClient1.Close();
+            kalkulatorClient2.Close();
+            kalkulatorClient3.Close();
         }
     }
 }
