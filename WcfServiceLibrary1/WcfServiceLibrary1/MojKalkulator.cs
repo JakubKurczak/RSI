@@ -33,5 +33,15 @@ namespace WcfServiceLibrary1
             this.suma += val_1;
             return suma;
         }
+
+        public double RozwiazWielomian(int x, int[] listaMnoznikow)
+        {
+            double wynik = 0;
+            for(int i = 0; i < listaMnoznikow.Count(); i++)
+            {
+                wynik += listaMnoznikow[i] * Math.Pow(x, i);
+            }
+            return wynik;
+        }
     }
 }

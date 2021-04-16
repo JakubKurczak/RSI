@@ -20,6 +20,9 @@ namespace WcfServiceLibrary1
 
         [OperationContract]
         double Sumuj(double val_1);
+
+        [OperationContract]
+        double RozwiazWielomian(int x, int[] listaMnoznikow);
         // TODO: Add your service operations here
     }
 
