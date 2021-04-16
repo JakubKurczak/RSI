@@ -18,6 +18,8 @@ namespace WcfServiceLibrary1
         [OperationContract]
         double Pomnoz(double val_1, double val_2);
 
+        [OperationContract]
+        double Sumuj(double val_1);
         // TODO: Add your service operations here
     }
 
