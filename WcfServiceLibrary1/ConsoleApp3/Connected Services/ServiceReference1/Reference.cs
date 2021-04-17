@@ -38,6 +38,12 @@ namespace ConsoleApp3.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/Sumuj", ReplyAction="http://tempuri.org/IKalkulator/SumujResponse")]
         System.Threading.Tasks.Task<double> SumujAsync(double val_1);
+        
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/RozwiazWielomian", ReplyAction="http://tempuri.org/IKalkulator/RozwiazWielomianResponse")]
+        double RozwiazWielomian(int x, int[] listaMnoznikow);
+        
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/RozwiazWielomian", ReplyAction="http://tempuri.org/IKalkulator/RozwiazWielomianResponse")]
+        System.Threading.Tasks.Task<double> RozwiazWielomianAsync(int x, int[] listaMnoznikow);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -97,6 +103,14 @@ namespace ConsoleApp3.ServiceReference1 {
         
         public System.Threading.Tasks.Task<double> SumujAsync(double val_1) {
             return base.Channel.SumujAsync(val_1);
+        }
+        
+        public double RozwiazWielomian(int x, int[] listaMnoznikow) {
+            return base.Channel.RozwiazWielomian(x, listaMnoznikow);
+        }
+        
+        public System.Threading.Tasks.Task<double> RozwiazWielomianAsync(int x, int[] listaMnoznikow) {
+            return base.Channel.RozwiazWielomianAsync(x, listaMnoznikow);
         }
     }
 }

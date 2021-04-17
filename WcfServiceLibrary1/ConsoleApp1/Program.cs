@@ -18,8 +18,8 @@ namespace ConsoleApp1
 
             ServiceHost mojHost = new ServiceHost(typeof(MojKalkulator), baseAddress);
 
-            WSHttpBinding mojBanding = new WSHttpBinding();
-            ServiceEndpoint endpoint1 = mojHost.AddServiceEndpoint(typeof(IKalkulator), mojBanding, "endpoint_1");
+            WSHttpBinding mojBinding = new WSHttpBinding();
+            ServiceEndpoint endpoint1 = mojHost.AddServiceEndpoint(typeof(IKalkulator), mojBinding, "endpoint_1");
 
             ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
 

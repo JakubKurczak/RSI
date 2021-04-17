@@ -24,6 +24,7 @@
   <Metadata>
     <MetadataFile FileName="Service1.disco" MetadataType="Disco" ID="f7331b00-e945-483d-b8e4-c00beaadf949" SourceId="1" SourceUrl="http://localhost:10001/Service1?disco" />
     <MetadataFile FileName="MojKalkulator.wsdl" MetadataType="Wsdl" ID="91d2a0d2-dda6-42b7-91fa-bffa235aff66" SourceId="1" SourceUrl="http://localhost:10001/Service1?wsdl" />
+    <MetadataFile FileName="Service12.xsd" MetadataType="Schema" ID="e0722ede-287e-4881-8d21-cc4fd6b973a5" SourceId="1" SourceUrl="http://localhost:10001/Service1?xsd=xsd2" />
     <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="8bcc5737-b5aa-4d93-b0d1-ecef1ff82343" SourceId="1" SourceUrl="http://localhost:10001/Service1?xsd=xsd0" />
     <MetadataFile FileName="Service11.xsd" MetadataType="Schema" ID="bb332c46-cf84-4816-b24d-ba06364f15f5" SourceId="1" SourceUrl="http://localhost:10001/Service1?xsd=xsd1" />
   </Metadata>

@@ -5,3 +5,10 @@ C:\Users\Kubak\source\repos\WcfServiceLibrary1\ConsoleApp3\obj\Debug\ConsoleApp3
 C:\Users\Kubak\source\repos\WcfServiceLibrary1\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.CoreCompileInputs.cache
 C:\Users\Kubak\source\repos\WcfServiceLibrary1\ConsoleApp3\obj\Debug\ConsoleApp3.exe
 C:\Users\Kubak\source\repos\WcfServiceLibrary1\ConsoleApp3\obj\Debug\ConsoleApp3.pdb
+C:\Users\Kubak\Source\Repos\RSI_2\WcfServiceLibrary1\ConsoleApp3\bin\Debug\ConsoleApp3.exe.config
+C:\Users\Kubak\Source\Repos\RSI_2\WcfServiceLibrary1\ConsoleApp3\bin\Debug\ConsoleApp3.exe
+C:\Users\Kubak\Source\Repos\RSI_2\WcfServiceLibrary1\ConsoleApp3\bin\Debug\ConsoleApp3.pdb
+C:\Users\Kubak\Source\Repos\RSI_2\WcfServiceLibrary1\ConsoleApp3\obj\Debug\ConsoleApp3.csprojAssemblyReference.cache
+C:\Users\Kubak\Source\Repos\RSI_2\WcfServiceLibrary1\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.CoreCompileInputs.cache
+C:\Users\Kubak\Source\Repos\RSI_2\WcfServiceLibrary1\ConsoleApp3\obj\Debug\ConsoleApp3.exe
+C:\Users\Kubak\Source\Repos\RSI_2\WcfServiceLibrary1\ConsoleApp3\obj\Debug\ConsoleApp3.pdb
