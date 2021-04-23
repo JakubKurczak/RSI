@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dc4efe21-c410-4fe4-82e8-7d03b684b5b5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1001/MojSerwis" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MojSerwis.xsd" MetadataType="Schema" ID="21e4090b-3852-4c1d-8db6-b8c3cd8001e8" SourceId="1" SourceUrl="http://localhost:1001/MojSerwis?xsd=xsd2" />
+    <MetadataFile FileName="MojSerwis.disco" MetadataType="Disco" ID="d7be2e16-7240-4dce-a28b-a896f486c85a" SourceId="1" SourceUrl="http://localhost:1001/MojSerwis?disco" />
+    <MetadataFile FileName="MyCCalculator.wsdl" MetadataType="Wsdl" ID="845add42-291a-46b9-adbe-24ed296f1ed0" SourceId="1" SourceUrl="http://localhost:1001/MojSerwis?wsdl" />
+    <MetadataFile FileName="MojSerwis1.xsd" MetadataType="Schema" ID="fbb77d5c-f2c1-4db5-b615-bc2c8e2ac5cc" SourceId="1" SourceUrl="http://localhost:1001/MojSerwis?xsd=xsd1" />
+    <MetadataFile FileName="MojSerwis2.xsd" MetadataType="Schema" ID="6df75e34-ef4a-4e9a-b7b0-6e8b1b719b1a" SourceId="1" SourceUrl="http://localhost:1001/MojSerwis?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

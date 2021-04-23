@@ -1,0 +1,6 @@
+C:\Users\Kubak\source\repos\Contract\CallbackContract\bin\Debug\CallbackContract.dll.config
+C:\Users\Kubak\source\repos\Contract\CallbackContract\bin\Debug\CallbackContract.dll
+C:\Users\Kubak\source\repos\Contract\CallbackContract\bin\Debug\CallbackContract.pdb
+C:\Users\Kubak\source\repos\Contract\CallbackContract\obj\Debug\CallbackContract.csproj.CoreCompileInputs.cache
+C:\Users\Kubak\source\repos\Contract\CallbackContract\obj\Debug\CallbackContract.dll
+C:\Users\Kubak\source\repos\Contract\CallbackContract\obj\Debug\CallbackContract.pdb

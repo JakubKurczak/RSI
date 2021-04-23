@@ -1,0 +1,14 @@
+C:\Users\Kubak\source\repos\Contract\Host\bin\Debug\Host.exe.config
+C:\Users\Kubak\source\repos\Contract\Host\bin\Debug\Host.exe
+C:\Users\Kubak\source\repos\Contract\Host\bin\Debug\Host.pdb
+C:\Users\Kubak\source\repos\Contract\Host\bin\Debug\Contract.dll
+C:\Users\Kubak\source\repos\Contract\Host\bin\Debug\Contract.pdb
+C:\Users\Kubak\source\repos\Contract\Host\bin\Debug\Contract.dll.config
+C:\Users\Kubak\source\repos\Contract\Host\obj\Debug\Host.csprojAssemblyReference.cache
+C:\Users\Kubak\source\repos\Contract\Host\obj\Debug\Host.csproj.CoreCompileInputs.cache
+C:\Users\Kubak\source\repos\Contract\Host\obj\Debug\Host.csproj.CopyComplete
+C:\Users\Kubak\source\repos\Contract\Host\obj\Debug\Host.exe
+C:\Users\Kubak\source\repos\Contract\Host\obj\Debug\Host.pdb
+C:\Users\Kubak\source\repos\Contract\Host\bin\Debug\CallbackContract.dll
+C:\Users\Kubak\source\repos\Contract\Host\bin\Debug\CallbackContract.pdb
+C:\Users\Kubak\source\repos\Contract\Host\bin\Debug\CallbackContract.dll.config
