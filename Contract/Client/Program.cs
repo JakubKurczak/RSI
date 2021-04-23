@@ -56,7 +56,7 @@ namespace Client
             SuperCalcClient superCalcClient = new SuperCalcClient(instanceContext);
 
             double value1 = 10.0;
-            Console.WriteLine("...calling Factorial({0})...",value1);
+            Console.WriteLine("...calling Factorial({0})...", value1);
             superCalcClient.Factorial(value1);
 
             int value2 = 5;
@@ -75,32 +75,98 @@ namespace Client
             LibraryCallbackImpl libraryCallback = new LibraryCallbackImpl();
             InstanceContext instanceContext_1 = new InstanceContext(libraryCallback);
             LibraryClient library = new LibraryClient(instanceContext_1);
+            var programOn = true;
+            while (programOn)
+            {
 
-            
-            Console.WriteLine("...calling getAllBooks...");
-            library.getAllBooks();
 
-            Book book_1 = new Book();
-            book_1.id = 4;
-            book_1.title = "Kosmos";
-            book_1.fee = 3.33;
-            book_1.isBorrowed = false;
-            Console.WriteLine("...calling add...");
-            library.add(book_1);
-            
-            Console.WriteLine("...calling getAllBooks...");
-            library.getAllBooks();
+                Console.WriteLine("Wybierz polecenie");
+                Console.WriteLine("1. Dodaj książke");
+                Console.WriteLine("2. Wypożycz książke");
+                Console.WriteLine("3. Znajdź książke po tytule");
+                Console.WriteLine("4. Wypisz książki");
+                Console.WriteLine("5. Znajdź tytuł po id");
+                Console.WriteLine("0. Wyjście");
+                var enter = Console.ReadLine();
+                Int32 func;
+                if (!Int32.TryParse(enter, out func))
+                {
+                    if (func == 1)
+                    {
+                        Console.WriteLine("Podaj Tytuł");
+                        string title = Console.ReadLine();
+                        Console.WriteLine("Podaj karę");
+                        string fee = Console.ReadLine();
+                        double convertFee;
+                        if (double.TryParse(fee, out convertFee))
+                        {
+                            var book = new Book();
+                            book.id = 1;
+                            book.fee = convertFee;
+                            book.isBorrowed = false;
+                            book.title = title;
+                            library.add(book);
+                        }
+                        else
+                        {
+                            Console.WriteLine("kara być liczbą");
+                        }
+                        //LibraryImpl.books;
+                    }
+                    else if (func == 2)
+                    {
+                        Console.WriteLine("podaj id książki do wypożyczenia");
+                        var enter2 = Console.ReadLine();
+                        Int32 id2;
+                        if (Int32.TryParse(enter2, out id2))
+                        {
+                            library.borrow(id2);
+                        }
+                        else
+                        {
+                            Console.WriteLine("id musi być liczbą");
+                        }
 
-            Console.WriteLine("...calling getTitleById(1)...");
-            string title = library.getTitleById(1);
-            Console.WriteLine("...title from getTitleById(1): {0}",title);
+                    }
+                    else if (func == 3)
+                    {
+                        Console.WriteLine("podaj tytuł książki do znalezienia");
+                        var enter3 = Console.ReadLine();
+                        library.findByTitle(enter3);
+                    }
+                    else if (func == 4)
+                    {
+                        library.getAllBooks();
+                    }
+                    else if (func == 5)
+                    {
+                        Console.WriteLine("podaj id książki, której tytuł potrzebujesz");
+                        var enter5 = Console.ReadLine();
+                        Int32 id5;
+                        if (Int32.TryParse(enter5, out id5))
+                        {
+                            library.getTitleById(id5);
+                        }
+                        else
+                        {
+                            Console.WriteLine("id musi być liczbą");
+                        }
 
-            Console.WriteLine("...calling findByTitle(wes)...");
-            library.findByTitle("Wes");
-                        
-            Console.WriteLine("--> Client must wait for results");
-            Console.WriteLine("Press <ENTER> after receiving all results");
-            Console.ReadLine();
+                    }
+                    else if (func == 0)
+                    {
+                        programOn = false;
+                    }
+                    else
+                    {
+                        Console.WriteLine("niepoprawny numer");
+                    };
+                }
+                else
+                {
+                    Console.WriteLine("To nie liczba");
+                }
+            }
             superCalcClient.Close();
             Console.WriteLine("CLIENT3 - STOP");
         }

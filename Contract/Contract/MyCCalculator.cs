@@ -42,7 +42,7 @@ namespace Contract
     [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Multiple)]
     public class LibraryImpl : Library
     {
-        static List<Book> books = new List<Book> {new Book(0,"Pan Tadeusz",5.55,false), new Book(1, "Wesele", 2.43, false), new Book(2, "Sklepy Cynamonowe", 7.1, false) };
+        public static List<Book> books = new List<Book> {new Book(0,"Pan Tadeusz",5.55,false), new Book(1, "Wesele", 2.43, false), new Book(2, "Sklepy Cynamonowe", 7.1, false) };
         ILibraryCallback libraryCallback = null;
         public LibraryImpl()
         {
