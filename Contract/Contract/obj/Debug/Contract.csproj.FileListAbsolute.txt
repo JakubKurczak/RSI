@@ -4,3 +4,10 @@ C:\Users\Kubak\source\repos\Contract\Contract\bin\Debug\Contract.pdb
 C:\Users\Kubak\source\repos\Contract\Contract\obj\Debug\Contract.csproj.CoreCompileInputs.cache
 C:\Users\Kubak\source\repos\Contract\Contract\obj\Debug\Contract.dll
 C:\Users\Kubak\source\repos\Contract\Contract\obj\Debug\Contract.pdb
+C:\Users\Kubak\Documents\GIT repos\RSI\Contract\Contract\bin\Debug\Contract.dll.config
+C:\Users\Kubak\Documents\GIT repos\RSI\Contract\Contract\bin\Debug\Contract.dll
+C:\Users\Kubak\Documents\GIT repos\RSI\Contract\Contract\bin\Debug\Contract.pdb
+C:\Users\Kubak\Documents\GIT repos\RSI\Contract\Contract\obj\Debug\Contract.csproj.CoreCompileInputs.cache
+C:\Users\Kubak\Documents\GIT repos\RSI\Contract\Contract\obj\Debug\Contract.dll
+C:\Users\Kubak\Documents\GIT repos\RSI\Contract\Contract\obj\Debug\Contract.pdb
+C:\Users\Kubak\Documents\GIT repos\RSI\Contract\Contract\obj\Debug\Contract.csprojAssemblyReference.cache

@@ -53,4 +53,54 @@ namespace Contract
             this.imag = i;
         }
     }
+
+    [ServiceContract(SessionMode = SessionMode.Required, CallbackContract = typeof(ILibraryCallback))]
+    public interface Library
+    {
+        [OperationContract]
+        void borrow(int id);
+
+        [OperationContract]
+        void add(Book book);
+
+        [OperationContract(IsOneWay = true)]
+        void findByTitle(string title);
+
+        [OperationContract]
+        string getTitleById(int id);
+
+        [OperationContract(IsOneWay = true)]
+        void getAllBooks();
+    }
+
+    [DataContract]
+    public class Book
+    {
+        
+        [DataMember]
+        public int id;
+
+        [DataMember]
+        public string title;
+
+        [DataMember]
+        public double fee;
+
+        [DataMember]
+        public bool isBorrowed;
+
+        public Book(int id, string title, double fee, bool isBorrowed)
+        {
+            this.id = id;
+            this.title = title;
+            this.fee = fee;
+            this.isBorrowed = isBorrowed;
+        }
+    }
+
+    public interface ILibraryCallback
+    {
+        [OperationContract(IsOneWay = true)]
+        void handleFindByTitle(List<Book> books);
+    }
 }

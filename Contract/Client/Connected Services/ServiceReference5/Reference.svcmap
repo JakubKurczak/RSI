@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0d158f84-6a1a-4360-bc0e-fad5906b661f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1007/MojLibrary" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MojLibrary.xsd" MetadataType="Schema" ID="50ee7059-4d2c-4853-850d-9d687d592c32" SourceId="1" SourceUrl="http://localhost:1007/MojLibrary?xsd=xsd2" />
+    <MetadataFile FileName="LibraryImpl.wsdl" MetadataType="Wsdl" ID="f2fb243e-6a65-4f97-b4f5-cde511d838a2" SourceId="1" SourceUrl="http://localhost:1007/MojLibrary?wsdl" />
+    <MetadataFile FileName="MojLibrary1.xsd" MetadataType="Schema" ID="b3936ff9-b7e5-44ae-b600-22903ad7840b" SourceId="1" SourceUrl="http://localhost:1007/MojLibrary?xsd=xsd1" />
+    <MetadataFile FileName="MojLibrary2.xsd" MetadataType="Schema" ID="476fee96-afbe-4e49-80bf-77547498f170" SourceId="1" SourceUrl="http://localhost:1007/MojLibrary?xsd=xsd0" />
+    <MetadataFile FileName="MojLibrary.disco" MetadataType="Disco" ID="e57a6f00-5729-41b7-a8d5-7798916f932b" SourceId="1" SourceUrl="http://localhost:1007/MojLibrary?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

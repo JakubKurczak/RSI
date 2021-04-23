@@ -40,14 +40,26 @@ namespace Host
 
             callbackServiceHost.Description.Behaviors.Add(serviceMetadata);
 
+            // ------------------------------------------------------------------------------
+
+            Uri libraryAddress = new Uri("http://localhost:1007/MojLibrary");
+            ServiceHost libraryServiceHost = new ServiceHost(typeof(LibraryImpl), libraryAddress);
+            WSDualHttpBinding libraryBinding = new WSDualHttpBinding();
+            ServiceEndpoint libraryEndpoint = libraryServiceHost.AddServiceEndpoint(typeof(Library), libraryBinding, "endpoint_4");
+
+            libraryServiceHost.Description.Behaviors.Add(serviceMetadata);
+
             try
             {
                 serviceHost.Open();
                 Console.WriteLine("----> ComplexCalculator is running.");
                 asyncServiceHost.Open();
-                Console.WriteLine("----> asyncServiceHost is running.");
+                Console.WriteLine("----> asyncServiceHost is running.");                
                 callbackServiceHost.Open();
                 Console.WriteLine("----> callbackServiceHost is running.");
+
+                libraryServiceHost.Open();
+                Console.WriteLine("----> libraryServiceHost is running.");
 
                 Console.WriteLine("----> Press <ENTER> to stop.\n");
                 Console.ReadLine();
@@ -64,6 +76,7 @@ namespace Host
                 serviceHost.Abort();
                 asyncServiceHost.Abort();
                 callbackServiceHost.Abort();
+                libraryServiceHost.Abort();
             }
         }
     }

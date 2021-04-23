@@ -37,4 +37,44 @@ namespace Contract
             return;
         }
     }
+
+
+    [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Multiple)]
+    public class LibraryImpl : Library
+    {
+        static List<Book> books = new List<Book> {new Book(0,"Pan Tadeusz",5.55,false), new Book(1, "Wesele", 2.43, false), new Book(2, "Sklepy Cynamonowe", 7.1, false) };
+        ILibraryCallback libraryCallback = null;
+        public LibraryImpl()
+        {
+           libraryCallback = OperationContext.Current.GetCallbackChannel<ILibraryCallback>();
+                        
+        }
+        public void add(Book book)
+        {
+            books.Add(book);
+        }
+
+        public void borrow(int id)
+        {
+            Book temp = books.Find(x => x.id == id);
+            if (temp != null && !temp.isBorrowed)
+                temp.isBorrowed = true;
+        }
+
+        public void findByTitle(string title)
+        {
+            Thread.Sleep(3000);
+            libraryCallback.handleFindByTitle(books.Where(x => x.title.Contains(title) == true).ToList());
+        }
+
+        public void getAllBooks()
+        {
+            libraryCallback.handleFindByTitle(books);
+        }
+
+        public string getTitleById(int id)
+        {
+            return books.Find(x => x.id == id) != null ? books.Find(x => x.id == id).title : "";
+        }
+    }
 }

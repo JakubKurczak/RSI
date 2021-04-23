@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Client.ServiceReference2;
 using Client.ServiceReference3;
 using Client.ServiceReference4;
+using Client.ServiceReference5;
 
 namespace Client
 {
@@ -41,7 +42,6 @@ namespace Client
             Console.WriteLine("... continue after Fun 1 call");
             Console.WriteLine("...calling Fun 2");
             asyncServiceClient.Fun2("asyncServiceClient");
-            Thread.Sleep(10);
             Console.WriteLine("... continue after Fun 2 call");
             Console.WriteLine("Press <ENTER> to continue");
             Console.ReadLine();
@@ -63,6 +63,41 @@ namespace Client
             Console.WriteLine("...calling DoSomething...");
             superCalcClient.DoSomething(value2);
 
+            Console.WriteLine("--> Client must wait for results");
+            Console.WriteLine("Press <ENTER> after receiving all results");
+            Console.ReadLine();
+            superCalcClient.Close();
+            Console.WriteLine("CLIENT3 - STOP");
+
+            //--------------------------------------------------------------------
+
+            Console.WriteLine("CLIENT3 - START(Callback service)");
+            LibraryCallbackImpl libraryCallback = new LibraryCallbackImpl();
+            InstanceContext instanceContext_1 = new InstanceContext(libraryCallback);
+            LibraryClient library = new LibraryClient(instanceContext_1);
+
+            
+            Console.WriteLine("...calling getAllBooks...");
+            library.getAllBooks();
+
+            Book book_1 = new Book();
+            book_1.id = 4;
+            book_1.title = "Kosmos";
+            book_1.fee = 3.33;
+            book_1.isBorrowed = false;
+            Console.WriteLine("...calling add...");
+            library.add(book_1);
+            
+            Console.WriteLine("...calling getAllBooks...");
+            library.getAllBooks();
+
+            Console.WriteLine("...calling getTitleById(1)...");
+            string title = library.getTitleById(1);
+            Console.WriteLine("...title from getTitleById(1): {0}",title);
+
+            Console.WriteLine("...calling findByTitle(wes)...");
+            library.findByTitle("Wes");
+                        
             Console.WriteLine("--> Client must wait for results");
             Console.WriteLine("Press <ENTER> after receiving all results");
             Console.ReadLine();
