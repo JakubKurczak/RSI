@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 using System.Threading;
+using MoreLinq;
 
 namespace Contract
 {
@@ -75,6 +76,10 @@ namespace Contract
         public string getTitleById(int id)
         {
             return books.Find(x => x.id == id) != null ? books.Find(x => x.id == id).title : "";
+        }
+        public int getIdForNewBook()
+        {
+            return books.MaxBy(x => x.id).First().id + 1;
         }
     }
 }

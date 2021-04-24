@@ -16,6 +16,7 @@ namespace Client
     {
         static void Main(string[] args)
         {
+            var i = 3;
             CCalculatorClient client = new CCalculatorClient("WSHttpBinding_ICCalculator1");
             ComplexNum n1 = new ComplexNum();
             n1.real = 1.2;
@@ -89,7 +90,7 @@ namespace Client
                 Console.WriteLine("0. Wyjście");
                 var enter = Console.ReadLine();
                 Int32 func;
-                if (!Int32.TryParse(enter, out func))
+                if (Int32.TryParse(enter, out func))
                 {
                     if (func == 1)
                     {
@@ -101,7 +102,7 @@ namespace Client
                         if (double.TryParse(fee, out convertFee))
                         {
                             var book = new Book();
-                            book.id = 1;
+                            book.id = i++;//library.getIdForNewBook();
                             book.fee = convertFee;
                             book.isBorrowed = false;
                             book.title = title;
@@ -145,7 +146,7 @@ namespace Client
                         Int32 id5;
                         if (Int32.TryParse(enter5, out id5))
                         {
-                            library.getTitleById(id5);
+                            Console.WriteLine(library.getTitleById(id5));
                         }
                         else
                         {
