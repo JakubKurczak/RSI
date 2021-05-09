@@ -25,7 +25,7 @@ namespace WcfService1
         List<Book> getAllXml();
 
         [OperationContract]
-        [WebGet(UriTemplate = "/json/Books")]
+        [WebGet(UriTemplate = "/json/Books", ResponseFormat = WebMessageFormat.Json)]
         List<Book> getAllJson();
 
         [OperationContract]
@@ -77,7 +77,7 @@ namespace WcfService1
     [DataContract]
     public class Book
     {
-        static int idCounter = 0;
+        public static int idCounter = 0;
         public int id = 0;
         bool isBorrow = false;
         string title = "";
@@ -118,6 +118,13 @@ namespace WcfService1
         {
             get { return author; }
             set { author = value; }
+        }
+
+        [DataMember(Order = 4)]
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
         }
     }
 

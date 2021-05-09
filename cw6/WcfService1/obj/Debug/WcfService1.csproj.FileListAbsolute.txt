@@ -12,3 +12,9 @@ D:\projektownaie baz danych repo\RSI\cw6\WcfService1\obj\Debug\WcfService1.cspro
 D:\projektownaie baz danych repo\RSI\cw6\WcfService1\obj\Debug\WcfService1.csproj.CoreCompileInputs.cache
 D:\projektownaie baz danych repo\RSI\cw6\WcfService1\obj\Debug\WcfService1.dll
 D:\projektownaie baz danych repo\RSI\cw6\WcfService1\obj\Debug\WcfService1.pdb
+C:\Users\Kubak\Source\Repos\RSI_2\cw6\WcfService1\bin\WcfService1.dll.config
+C:\Users\Kubak\Source\Repos\RSI_2\cw6\WcfService1\bin\WcfService1.dll
+C:\Users\Kubak\Source\Repos\RSI_2\cw6\WcfService1\bin\WcfService1.pdb
+C:\Users\Kubak\Source\Repos\RSI_2\cw6\WcfService1\obj\Debug\WcfService1.csproj.CoreCompileInputs.cache
+C:\Users\Kubak\Source\Repos\RSI_2\cw6\WcfService1\obj\Debug\WcfService1.dll
+C:\Users\Kubak\Source\Repos\RSI_2\cw6\WcfService1\obj\Debug\WcfService1.pdb

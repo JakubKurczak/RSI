@@ -17,12 +17,17 @@ namespace WcfService1
 
         public string addJson(Book book)
         {
+            book.Id = Book.idCounter;
+            Book.idCounter += 1;
+
             Books.Add(book);
             return "książka została dodana";
         }
 
         public string addXml(Book book)
         {
+            book.Id = Book.idCounter;
+            Book.idCounter += 1;
             Books.Add(book);
             return "książka została dodana";
         }
