@@ -27,10 +27,12 @@ namespace WcfService1
             return "książka została dodana";
         }
 
-        public string deleteJson(Book book)
+        public string deleteJson(string Id)
         {
-            if (Books.Remove(book))
+            var book = Books.Where(x => x.id == Int32.Parse(Id)).First();
+            if (book != null)
             {
+                Books.Remove(book);
                 return "książka została usunięta";
             }
             else
@@ -39,10 +41,12 @@ namespace WcfService1
             }
         }
 
-        public string deleteXml(Book book)
+        public string deleteXml(string Id)
         {
-            if (Books.Remove(book))
+            var book = Books.Where(x => x.id == Int32.Parse(Id)).First();
+            if (book != null)
             {
+                Books.Remove(book);
                 return "książka została usunięta";
             }
             else
@@ -116,14 +120,14 @@ namespace WcfService1
             }
         }
 
-        public string updateByIdJson(string Id, string Title, string Author, int Pages)
+        public string updateByIdJson(string Id, Book copyBook)
         {
             var book = Books.Where(x => x.id == Int32.Parse(Id)).First();
             if (book != null)
             {
-                book.Author = Author;
-                book.Pages = Pages;
-                book.Title = Title;
+                book.Author = copyBook.Author;
+                book.Pages = copyBook.Pages;
+                book.Title = copyBook.Title;
                 return "książka zaktualizowana";
             }
             else
@@ -133,20 +137,21 @@ namespace WcfService1
 
         }
 
-        public string updateByIdXml(string Id, string Title, string Author, int Pages)
+        public string updateByIdXml(string Id, Book copyBook)
         {
             var book = Books.Where(x => x.id == Int32.Parse(Id)).First();
             if (book != null)
             {
-                book.Author = Author;
-                book.Pages = Pages;
-                book.Title = Title;
+                book.Author = copyBook.Author;
+                book.Pages = copyBook.Pages;
+                book.Title = copyBook.Title;
                 return "książka zaktualizowana";
             }
             else
             {
                 return "książka nie istnieje";
             }
+
         }
     }
 }

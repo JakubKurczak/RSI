@@ -38,18 +38,18 @@ namespace WcfService1
 
         [OperationContract]
         [WebInvoke(UriTemplate = "/Books/{id}", Method = "PUT", RequestFormat = WebMessageFormat.Xml)]
-        string updateByIdXml(string Id, string Title, string Author, int Pages);
+        string updateByIdXml(string Id, Book book);
 
         [OperationContract]
         [WebInvoke(UriTemplate = "/json/Books/{id}", Method = "PUT", RequestFormat = WebMessageFormat.Json)]
-        string updateByIdJson(string Id, string Title, string Author, int Pages);
+        string updateByIdJson(string Id, Book book);
 
         [OperationContract]
-        [WebInvoke(UriTemplate = "/Books/{id}", Method = "PUT", RequestFormat = WebMessageFormat.Xml)]
+        [WebInvoke(UriTemplate = "/Books/borrow/{id}", Method = "PUT", RequestFormat = WebMessageFormat.Xml)]
         string borrowBookXml(string Id);
 
         [OperationContract]
-        [WebInvoke(UriTemplate = "/json/Books/{id}", Method = "PUT", RequestFormat = WebMessageFormat.Json)]
+        [WebInvoke(UriTemplate = "/json/Books/borrow/{id}", Method = "PUT", RequestFormat = WebMessageFormat.Json)]
         string borrowBookJson(string Id);
 
 
@@ -63,11 +63,11 @@ namespace WcfService1
 
         [OperationContract]
         [WebInvoke(UriTemplate = "/Books/{id}", Method = "DELETE")]
-        string deleteXml(Book book);
+        string deleteXml(string Id);
 
         [OperationContract]
         [WebInvoke(UriTemplate = "/json/Books/{id}", Method = "DELETE")]
-        string deleteJson(Book book);
+        string deleteJson(string Id);
         // TODO: dodaj tutaj operacje usługi
     }
 

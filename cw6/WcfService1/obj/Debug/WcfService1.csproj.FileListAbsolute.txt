@@ -5,3 +5,10 @@ C:\Users\macie\source\repos\cw6\WcfService1\obj\Debug\WcfService1.csprojAssembly
 C:\Users\macie\source\repos\cw6\WcfService1\obj\Debug\WcfService1.csproj.CoreCompileInputs.cache
 C:\Users\macie\source\repos\cw6\WcfService1\obj\Debug\WcfService1.dll
 C:\Users\macie\source\repos\cw6\WcfService1\obj\Debug\WcfService1.pdb
+D:\projektownaie baz danych repo\RSI\cw6\WcfService1\bin\WcfService1.dll.config
+D:\projektownaie baz danych repo\RSI\cw6\WcfService1\bin\WcfService1.dll
+D:\projektownaie baz danych repo\RSI\cw6\WcfService1\bin\WcfService1.pdb
+D:\projektownaie baz danych repo\RSI\cw6\WcfService1\obj\Debug\WcfService1.csprojAssemblyReference.cache
+D:\projektownaie baz danych repo\RSI\cw6\WcfService1\obj\Debug\WcfService1.csproj.CoreCompileInputs.cache
+D:\projektownaie baz danych repo\RSI\cw6\WcfService1\obj\Debug\WcfService1.dll
+D:\projektownaie baz danych repo\RSI\cw6\WcfService1\obj\Debug\WcfService1.pdb
