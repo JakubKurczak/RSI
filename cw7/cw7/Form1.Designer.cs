@@ -38,6 +38,7 @@ namespace cw7
             this.deleteButton = new System.Windows.Forms.Button();
             this.formatLabel = new Label();
             this.format = new ComboBox();
+            this.info = new Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,14 +55,15 @@ namespace cw7
             this.tableLayoutPanel1.Controls.Add(this.updateButton, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.showButton, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.deleteButton, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.info, 3, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 500);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 200);
             this.tableLayoutPanel1.TabIndex = 3;
 
 
@@ -71,6 +73,18 @@ namespace cw7
             this.format.Items.Add("XML");
             this.format.Items.Add("JSON");
             this.format.SelectedIndex = 0;
+            // 
+            //infoButton
+            // 
+            this.info.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.info.Name = "info";
+            this.info.Size = new System.Drawing.Size(70, 70);
+            this.info.TabIndex = 0;
+            this.info.Text = "Autorzy";
+            this.info.UseVisualStyleBackColor = true;
+            this.info.Click += new System.EventHandler(this.infoButton_Click);
+
             // 
             // createButton
             // 
@@ -116,7 +130,7 @@ namespace cw7
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 500);
+            this.ClientSize = new System.Drawing.Size(800, 200);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "RSI";
@@ -132,6 +146,7 @@ namespace cw7
         private Button updateButton;
         private Button showButton;
         private Button createButton;
+        private Button info;
         private TableLayoutPanel tableLayoutPanel1;
     }
 }

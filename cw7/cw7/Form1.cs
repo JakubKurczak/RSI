@@ -35,11 +35,11 @@ namespace cw7
                 Width = 500,
                 Height = 500,
             };
-             id = new TextBox();
-             title = new TextBox();
-             author = new TextBox();
-             year = new TextBox();
-             price = new TextBox();
+            id = new TextBox();
+            title = new TextBox();
+            author = new TextBox();
+            year = new TextBox();
+            price = new TextBox();
             Button send = new Button();
             TableLayoutPanel tableLayoutPanel = new TableLayoutPanel();
             id.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -208,7 +208,10 @@ namespace cw7
             form.ShowDialog();
         }
 
-
+        private void infoButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Maciej Ryś" + Environment.NewLine + " Jakub Kurczak"+Environment.NewLine + Environment.MachineName + Environment.NewLine + DateTime.Now);
+        }
         private void showButton_Click(object sender, EventArgs e)
         {
             string format = this.format.Text;
@@ -252,8 +255,25 @@ namespace cw7
             books.Dock = System.Windows.Forms.DockStyle.Fill;
             books.Name = "id";
             books.Size = new System.Drawing.Size(72, 40);
-            XDocument formatter = XDocument.Parse(responseString);
-            books.Text = formatter.ToString();
+            var text = "";
+            if (format == "XML")
+            {
+                XDocument formatter = XDocument.Parse(responseString);
+                text = formatter.ToString();
+            }
+            else
+            {
+                var options = new JsonSerializerOptions()
+                {
+                    WriteIndented = true
+                };
+
+                var jsonElement = JsonSerializer.Deserialize<JsonElement>(responseString);
+
+                text = JsonSerializer.Serialize(jsonElement, options);
+            }
+
+            books.Text = text;
             books.Multiline = true;
             books.ScrollBars = ScrollBars.Vertical;
 
@@ -339,7 +359,7 @@ namespace cw7
                 req.Method = "PUT";
                 postData = req.GetRequestStream();
                 req.ContentType = "text/xml";
-                XmlSerializer ser = new XmlSerializer(typeof(Book), "http://schemas.datacontract.org/2004/07/MyWebService/");
+                XmlSerializer ser = new XmlSerializer(typeof(Book), "http://schemas.datacontract.org/2004/07/MyWebService");
                 ser.Serialize(postData, book);
             }
             else
