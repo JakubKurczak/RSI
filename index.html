@@ -1,0 +1,224 @@
+<html>
+
+<head>
+    <title>Ajax Client</title>
+
+    <style>
+        #add_book_form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #modify_book_form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #show_book_form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #delete_book_form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #divider {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="divider">
+        <div>
+            <button id="test_button">show all</button>
+        </div>
+        <div>
+            <form id="show_book_form">
+
+                <label for="show_id">Id</label>
+                <input type="text" name="Id" id="show_id">
+
+            </form>
+            <button id="fake_submit_show_book">Show book</button>
+        </div>
+        <div>
+            <form id="delete_book_form">
+
+                <label for="delete_id">Id</label>
+                <input type="text" name="Id" id="delete_id">
+            </form>
+            <button id="fake_submit_delete_book">Delete book</button>
+        </div>
+        <div>
+            <form id="add_book_form">
+                <label for="add_book_title">Title</label>
+                <input type="text" name="Title" id="add_book_title">
+                <label for="add_book_author">Author</label>
+                <input type="text" name="Author" id="add_book_author">
+                <label for="add_book_isBorrow">isBorrow</label>
+                <input type="text" name="isBorrow" id="add_book_isBorrow">
+                <label for="add_book_pages">Pages</label>
+                <input type="text" name="Pages" id="add_book_pages">
+                <label for="Id">Id</label>
+                <input type="text" name="Id" id="add_book_id">
+            </form>
+            <button id="fake_submit_add_book">Add book</button>
+        </div>
+        <div>
+            <form id="modify_book_form">
+                <label for="Title">Title</label>
+                <input type="text" name="Title" id="Title">
+                <label for="Author">Author</label>
+                <input type="text" name="Author" id="Author">
+                <label for="isBorrow">isBorrow</label>
+                <input type="text" name="isBorrow" id="isBorrow">
+                <label for="Pages">Pages</label>
+                <input type="text" name="Pages" id="Pages">
+                <label for="Id">Id</label>
+                <input type="text" name="Id" id="Id">
+            </form>
+            <button id="fake_submit_modify_book">Modify book</button>
+        </div>
+    </div>
+
+
+
+    <div id="result">
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#test_button").click(function () {
+                $.ajax({
+                    url: "http://localhost:56384/Service1.svc/json/Books",
+                    async: true,
+                    success: function (result) {
+                        $("#result").html("");
+                        for (const index in result) {
+
+                            var title = "<h1> Title: " + result[index].Title + "</h1>";
+                            var Id = "<h2> Id: " + result[index].Id + "</h2>";
+                            var Author = "<h2> Author: " + result[index].Author + "</h2>";
+                            var Pages = "<h2> Pages: " + result[index].Pages + "</h2>";
+                            var IsBorrow = "<h2> isBorrow: " + result[index].IsBorrow +
+                                "</h2>";
+                            $("#result").append(title, Id, Author, Pages, IsBorrow);
+
+                            console.log(result[index]);
+                        }
+
+                    }
+                })
+            });
+
+            $("#fake_submit_show_book").click(function () {
+                var id = $("#show_id").val();
+                var url = "http://localhost:56384/Service1.svc/json/Books/";
+                url += id;
+                $.ajax({
+                    url: url,
+                    async: true,
+                    success: function (result) {
+                        $("#result").html("");
+                        console.log(result);
+                        var title = "<h1> Title: " + result.Title + "</h1>";
+                        var Id = "<h2> Id: " + result.Id + "</h2>";
+                        var Author = "<h2> Author: " + result.Author + "</h2>";
+                        var Pages = "<h2> Pages: " + result.Pages + "</h2>";
+                        var IsBorrow = "<h2> isBorrow: " + result.IsBorrow + "</h2>";
+                        $("#result").append(title, Id, Author, Pages, IsBorrow);
+
+
+                    }
+                });
+            });
+
+            $('#fake_submit_delete_book').click(function () {
+                var id = $("#delete_id").val();
+                var url = "http://localhost:56384/Service1.svc/json/Books/";
+                url += id;
+                $.ajax({
+                    url: url,
+                    async: true,
+                    type: 'DELETE',
+                    success: function (result) {
+                        $("#result").html("");
+                        console.log(result);
+                        var title = "Book deleted";
+                        $("#result").append(title);
+                    }
+                });
+            });
+
+            $('#fake_submit_add_book').click(function () {
+                var IsBorrow = $("#add_book_isBorrow").val() == 'true';
+                var Title = $("#add_book_title").val();
+                var Pages = parseInt($("#add_book_pages").val());
+                var Author = $("#add_book_author").val();
+                var url = "http://localhost:56384/Service1.svc/json/Books";
+                var data = {
+                        IsBorrow: IsBorrow,
+                        Title: Title,
+                        Pages: Pages,
+                        Author: Author
+                    };
+                console.log(data);
+                $.ajax({
+                    url: url,
+                    async: true,
+                    type: 'POST',
+                    data: JSON.stringify(data),
+                    contentType:'application/json',  // <---add this
+                    dataType: 'text',
+                    success: function (result) {
+                        $("#result").html("");
+                        console.log(result);
+                        var title = "Book added";
+                        $("#result").append(title);
+                    }
+                });
+            });
+            $('#fake_submit_modify_book').click(function () {
+                var Id = $("#Id").val();
+                var IsBorrow = $("#IsBorrow").val() == 'true';
+                var Title = $("#Title").val();
+                var Pages = parseInt($("#Pages").val());
+                var Author = $("#Author").val();
+                var url = "http://localhost:56384/Service1.svc/json/Books/" +Id;
+
+                var data = {
+                        IsBorrow: IsBorrow,
+                        Title: Title,
+                        Pages: Pages,
+                        Author: Author
+                    };
+                console.log(data);
+                $.ajax({
+                    url: url,
+                    async: true,
+                    type: 'PUT',
+                    data: JSON.stringify(data),
+                    contentType:'application/json',  // <---add this
+                    dataType: 'text',
+                    success: function (result) {
+                        $("#result").html("");
+                        console.log(result);
+                        var title = "Book modified";
+                        $("#result").append(title);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

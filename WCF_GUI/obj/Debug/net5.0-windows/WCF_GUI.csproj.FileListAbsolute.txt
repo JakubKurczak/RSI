@@ -1,0 +1,16 @@
+C:\Users\Kubak\Source\Repos\RSI_2\WCF_GUI\bin\Debug\net5.0-windows\WCF_GUI.exe
+C:\Users\Kubak\Source\Repos\RSI_2\WCF_GUI\bin\Debug\net5.0-windows\WCF_GUI.deps.json
+C:\Users\Kubak\Source\Repos\RSI_2\WCF_GUI\bin\Debug\net5.0-windows\WCF_GUI.runtimeconfig.json
+C:\Users\Kubak\Source\Repos\RSI_2\WCF_GUI\bin\Debug\net5.0-windows\WCF_GUI.runtimeconfig.dev.json
+C:\Users\Kubak\Source\Repos\RSI_2\WCF_GUI\bin\Debug\net5.0-windows\WCF_GUI.dll
+C:\Users\Kubak\Source\Repos\RSI_2\WCF_GUI\bin\Debug\net5.0-windows\ref\WCF_GUI.dll
+C:\Users\Kubak\Source\Repos\RSI_2\WCF_GUI\bin\Debug\net5.0-windows\WCF_GUI.pdb
+C:\Users\Kubak\Source\Repos\RSI_2\WCF_GUI\obj\Debug\net5.0-windows\WCF_GUI.csprojAssemblyReference.cache
+C:\Users\Kubak\Source\Repos\RSI_2\WCF_GUI\obj\Debug\net5.0-windows\WCF_GUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kubak\Source\Repos\RSI_2\WCF_GUI\obj\Debug\net5.0-windows\WCF_GUI.AssemblyInfoInputs.cache
+C:\Users\Kubak\Source\Repos\RSI_2\WCF_GUI\obj\Debug\net5.0-windows\WCF_GUI.AssemblyInfo.cs
+C:\Users\Kubak\Source\Repos\RSI_2\WCF_GUI\obj\Debug\net5.0-windows\WCF_GUI.csproj.CoreCompileInputs.cache
+C:\Users\Kubak\Source\Repos\RSI_2\WCF_GUI\obj\Debug\net5.0-windows\WCF_GUI.dll
+C:\Users\Kubak\Source\Repos\RSI_2\WCF_GUI\obj\Debug\net5.0-windows\ref\WCF_GUI.dll
+C:\Users\Kubak\Source\Repos\RSI_2\WCF_GUI\obj\Debug\net5.0-windows\WCF_GUI.pdb
+C:\Users\Kubak\Source\Repos\RSI_2\WCF_GUI\obj\Debug\net5.0-windows\WCF_GUI.genruntimeconfig.cache
