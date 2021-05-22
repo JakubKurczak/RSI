@@ -99,7 +99,7 @@
         $(document).ready(function () {
             $("#test_button").click(function () {
                 $.ajax({
-                    url: "http://localhost:56384/Service1.svc/json/Books",
+                    url: "http://inet13.wega0.net.ii.pwr.wroc.pl/Service1.svc/json/Books",
                     async: true,
                     success: function (result) {
                         $("#result").html("");
@@ -122,7 +122,7 @@
 
             $("#fake_submit_show_book").click(function () {
                 var id = $("#show_id").val();
-                var url = "http://localhost:56384/Service1.svc/json/Books/";
+                var url = "http://inet13.wega0.net.ii.pwr.wroc.pl/Service1.svc/json/Books/";
                 url += id;
                 $.ajax({
                     url: url,
@@ -144,7 +144,7 @@
 
             $('#fake_submit_delete_book').click(function () {
                 var id = $("#delete_id").val();
-                var url = "http://localhost:56384/Service1.svc/json/Books/";
+                var url = "http://inet13.wega0.net.ii.pwr.wroc.pl/Service1.svc/json/Books/";
                 url += id;
                 $.ajax({
                     url: url,
@@ -164,7 +164,7 @@
                 var Title = $("#add_book_title").val();
                 var Pages = parseInt($("#add_book_pages").val());
                 var Author = $("#add_book_author").val();
-                var url = "http://localhost:56384/Service1.svc/json/Books";
+                var url = "http://inet13.wega0.net.ii.pwr.wroc.pl/Service1.svc/json/Books";
                 var data = {
                         IsBorrow: IsBorrow,
                         Title: Title,
@@ -193,7 +193,7 @@
                 var Title = $("#Title").val();
                 var Pages = parseInt($("#Pages").val());
                 var Author = $("#Author").val();
-                var url = "http://localhost:56384/Service1.svc/json/Books/" +Id;
+                var url = "http://inet13.wega0.net.ii.pwr.wroc.pl/Service1.svc/json/Books/" +Id;
 
                 var data = {
                         IsBorrow: IsBorrow,
