@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 
 <head>
     <title>Ajax Client</title>
@@ -34,7 +34,20 @@
 </head>
 
 <body>
-
+    <header>
+        <h3>Maciej Ryś 246648</h3>
+        <h3>Kuba Kurczak 237470</h3>
+        <script>
+    var currentdate = new Date();
+            var datetime = "Data: " + currentdate.getDate() + "/"
+                + (currentdate.getMonth() + 1) + "/"
+                + currentdate.getFullYear() + "  "
+                + currentdate.getHours() + ":"
+                + currentdate.getMinutes() + ":"
+                + currentdate.getSeconds();
+            document.writeln(datetime);
+        </script>
+    </header>
     <div id="divider">
         <div>
             <button id="test_button">show all</button>
@@ -85,6 +98,15 @@
                 <input type="text" name="Id" id="Id">
             </form>
             <button id="fake_submit_modify_book">Modify book</button>
+        </div>
+        <div>
+            <form id="borrow_book_form">
+
+                <label for="borrow_id">Id</label>
+                <input type="text" name="Id" id="borrow_id">
+
+            </form>
+            <button id="fake_submit_borrow_book">Borrow book</button>
         </div>
     </div>
 
@@ -183,7 +205,7 @@
                         $("#result").html("");
                         console.log(result);
                         var title = "Book added";
-                        $("#result").append(title);
+                        $("#result").append(result);
                     }
                 });
             });
@@ -207,13 +229,32 @@
                     async: true,
                     type: 'PUT',
                     data: JSON.stringify(data),
-                    contentType:'application/json',  // <---add this
+                    contentType:'application/json',
                     dataType: 'text',
                     success: function (result) {
                         $("#result").html("");
                         console.log(result);
                         var title = "Book modified";
+                        $("#result").append(result);
+                    }
+                });
+            });
+
+            $("#fake_submit_borrow_book").click(function () {
+                var id = $("#borrow_id").val();
+                var url = "http://inet13.wega0.net.ii.pwr.wroc.pl/Service1.svc/json/Books/borrow/";
+                url += id;
+                $.ajax({
+                    url: url,
+                    async: true,
+                    type: 'PUT',
+                    success: function (result) {
+                        $("#result").html("");
+                        console.log(result);
+                        var title = "<h1>Book has been borrowed</h1>";
                         $("#result").append(title);
+
+
                     }
                 });
             });
